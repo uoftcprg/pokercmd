@@ -1,0 +1,3 @@
+[submodule "lib/OMPEval"]
+	path = lib/OMPEval
+	url = https://github.com/uoftcprg/OMPEval.git
