@@ -1,2 +1,2 @@
 # pokercmd
-Command line tools for poker-related calculations
+Command line tools for poker-related calculations.
