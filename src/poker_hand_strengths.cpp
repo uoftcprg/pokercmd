@@ -25,21 +25,13 @@ int main(int argc, char* argv[])
 		while (iss >> cards) {
 			card_ranges.emplace_back(cards);
 
-			if (args.duration)
+			if (args.standard_deviation)
 				equity_calculator.start(
 					card_ranges,
 					board,
 					0u,
 					false,
-					5e-5,
-					[&args, &equity_calculator](
-							const auto& r
-					)
-					{
-						if (r.time >= args.duration)
-						    equity_calculator.stop();
-					},
-					std::min(0.2, args.duration)
+					args.standard_deviation
 				);
 			else
 				equity_calculator.start(card_ranges, board);

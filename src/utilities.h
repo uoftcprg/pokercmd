@@ -4,7 +4,7 @@
 namespace pokercmd {
 
 	struct Arguments {
-		double duration;
+		double standard_deviation;
 	};
 
 	Arguments parse_args(int argc, char* argv[]);

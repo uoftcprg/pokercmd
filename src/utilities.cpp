@@ -12,14 +12,14 @@ namespace pokercmd {
 		auto args = Arguments{};
 
 		if (argc >= 2)
-			args.duration = std::stod(argv[1]);
+			args.standard_deviation = std::stod(argv[1]);
 		
 		if (argc > 2) {
 			(
 				std::cout
 				<< "Usage: "
 				<< argv[0]
-				<< " [duration]"
+				<< " [standard_deviation]"
 				<< std::endl
 			);
 			std::exit(1);
