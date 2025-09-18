@@ -34,7 +34,12 @@ int main(int argc, char* argv[])
 					args.standard_deviation
 				);
 			else
-				equity_calculator.start(card_ranges, board);
+				equity_calculator.start(
+					card_ranges,
+					board,
+					0u,
+					true
+				);
 
 			equity_calculator.wait();
 
